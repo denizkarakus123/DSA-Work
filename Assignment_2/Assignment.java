@@ -19,7 +19,6 @@ class Assignment implements Comparator<Assignment>{
 	 */
 	@Override
 	public int compare(Assignment a1, Assignment a2) {
-		// TODO Implement this
 		//we need to sort by weight first since we want to maximize weights
 		if (a1.weight > a2.weight){
 			return -1;
