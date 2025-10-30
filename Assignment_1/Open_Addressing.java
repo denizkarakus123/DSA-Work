@@ -48,7 +48,6 @@ public class Open_Addressing {
      }
         /**Implements the hash function g(k)*/
         public int probe(int key, int i) {
-            //TODO: implement this function and change the return statement.
             int hash = (((A * key) % power2(w)) >> (w-r));
             return (hash + i) % power2(r);
      }
@@ -56,7 +55,6 @@ public class Open_Addressing {
 
      /**Inserts key k into hash table. Returns the number of collisions encountered*/
         public int insertKey(int key){
-            //TODO : implement this and change the return statement.
             int i = 0;
 
             while (i < m) {
@@ -89,7 +87,6 @@ public class Open_Addressing {
 
          /**Inserts key k into hash table. Returns the number of collisions encountered*/
         public int removeKey(int key) {
-            //TODO: implement this and change the return statement
             int slotsVisited = 0;
             int hash = probe(key, slotsVisited);
 
