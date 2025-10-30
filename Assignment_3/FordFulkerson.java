@@ -5,7 +5,6 @@ public class FordFulkerson {
 
 	public static ArrayList<Integer> pathDFS(Integer source, Integer destination, WGraph graph){
 		ArrayList<Integer> path = new ArrayList<Integer>();
-		/* YOUR CODE GOES HERE*/
 		boolean visited[] = new boolean[graph.getNbNodes()];
 
 		//using recursive method because it is a cleaner implementation and we care about accuracy for this q
@@ -53,7 +52,6 @@ public class FordFulkerson {
 		String answer="";
 		int maxFlow = 0;
 		
-		/* YOUR CODE GOES HERE		*/
 		//create a new graph to store the residual graph
 		WGraph residualGraph = new WGraph(graph);
 
